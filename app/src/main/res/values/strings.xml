@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">OSC-MVP-Demo</string>
+    <string name="desc">
+        我是描述,很多很多很多很多很多很多很多很多很多很多很多很多
+        很多很多很多很多很多很多很多很多很多很多很多很多描述
+    </string>
+    <string name="title">我是标题</string>
 </resources>
