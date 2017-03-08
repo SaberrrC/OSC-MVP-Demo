@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zqx.osc_mvp_demo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:name=".global.MyApp"
         android:allowBackup="true"

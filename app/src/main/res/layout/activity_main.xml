@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
 
     <com.zqx.osc_mvp_demo.ui.widget.SimpleRecyclerView
+        android:background="#e0e0e0"
         android:id="@+id/recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

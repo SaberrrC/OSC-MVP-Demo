@@ -1,5 +1,6 @@
 package com.zqx.osc_mvp_demo.ui.adapter;
 
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -29,7 +30,6 @@ public class SimpleRecyclerAdapter<T> extends RecyclerView.Adapter<SimpleRecycle
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View itemView = LayoutInflater.from(parent.getContext()).inflate(mItemLayout, parent, false);
         return new ViewHolder(itemView);
 
@@ -38,9 +38,9 @@ public class SimpleRecyclerAdapter<T> extends RecyclerView.Adapter<SimpleRecycle
     @Override
     public void onViewAttachedToWindow(ViewHolder holder) {
         super.onViewAttachedToWindow(holder);
-        //加载条目时的动画
-        //holder.itemView.setScaleX(.9f);
-        //ViewCompat.animate(holder.mView).setDuration(300).scaleX(1).start();
+//        加载条目时的动画
+        holder.itemView.setScaleX(.9f);
+        ViewCompat.animate(holder.itemView).setDuration(300).scaleX(1).start();
     }
 
     @Override

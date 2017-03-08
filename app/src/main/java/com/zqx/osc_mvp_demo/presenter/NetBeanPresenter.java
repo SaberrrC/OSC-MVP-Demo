@@ -20,7 +20,7 @@ public abstract class NetBeanPresenter<T> implements INetDataPresenter<T> {
     }
 
     @Override
-    public void getDataAndNoticeView(final int requestCode, final String url, final Class<T> beanClass) {
+    public void getData(final int requestCode, final String url, final Class<T> beanClass) {
         Run.onSub(new Runnable() {
             @Override
             public void run() {

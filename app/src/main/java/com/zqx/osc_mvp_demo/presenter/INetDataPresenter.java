@@ -9,6 +9,6 @@ public interface INetDataPresenter<T> {
     /**
      * @param requestCode 作为一个附加参数,可标记本次请求是下拉刷新,还是加载更多,还是...
      */
-     void getDataAndNoticeView(int requestCode, String url, Class<T> beanClass);
+     void getData(int requestCode, String url, Class<T> beanClass);
 
 }
